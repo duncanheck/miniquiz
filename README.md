@@ -1,12 +1,74 @@
-# React + Vite
+🧠 Mini Trivia Quiz App
+A simple React + Vite app that pulls multiple-choice trivia questions from the Open Trivia Database API and lets users test their knowledge in a fun, interactive way.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 Features
+✅ React + Vite setup
 
-Currently, two official plugins are available:
+✅ User form to collect name, category, and difficulty
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Fetches live multiple choice questions via API
 
-## Expanding the ESLint configuration
+✅ Displays results with correct/incorrect feedback
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Clean UI styled with CSS
+
+📦 Tech Stack
+React
+
+Vite
+
+Open Trivia DB API
+
+CSS for styling
+
+📂 Folder Structure
+css
+Copy
+Edit
+src/
+├── App.jsx
+├── main.jsx
+├── assets/
+│   └── style.css
+├── components/
+│   ├── HomePage.jsx
+│   ├── QuestionForm.jsx
+│   └── Results.jsx
+⚙️ How to Run Locally
+Clone the repo
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/mini-trivia-quiz.git
+cd mini-trivia-quiz
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Start the dev server
+
+bash
+Copy
+Edit
+npm run dev
+Visit http://localhost:5173
+
+✏️ Customize
+You can add:
+
+More questions per session
+
+Leaderboards with Firebase or Supabase
+
+User avatars or score tracking
+
+Dark mode toggle
+
+🐛 Known Issues
+Sometimes API returns no question if too specific (e.g. Hard + Sports)
+
+📄 License
+MIT — Free to use for educational and commercial purposes.
